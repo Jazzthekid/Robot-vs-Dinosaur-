@@ -16,7 +16,7 @@ class Battlefield:
         print('')
 
     def battle_phase(self):
-        # after testing both attacks setup a while loop here that looks at both of their health values 
+       
         fighter_alive = True
         while fighter_alive == True:
             while self.robot.health >0 and self.dinosaur.health >0:
