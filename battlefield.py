@@ -32,7 +32,5 @@ class Battlefield:
                 
 
 
-    def display_winner(self):
-        pass
 
             
