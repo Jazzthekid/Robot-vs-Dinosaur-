@@ -8,11 +8,10 @@ class Battlefield:
 
     def run_game(self):
         self.display_welcome()
-        
         self.battle_phase()
 
     def display_welcome(self):
-        print("Welcome to the battlefield! A battle for the ages is about to commence")
+        print("Welcome to Battleworld! A battle for the ages is about to commence")
         print('')
 
     def battle_phase(self):
@@ -33,6 +32,7 @@ class Battlefield:
                 
 
 
-
+    def display_winner(self):
+        pass
 
             
