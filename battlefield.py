@@ -8,11 +8,12 @@ class Battlefield:
 
     def run_game(self):
         self.display_welcome()
-        self.display_winner()
+        
         self.battle_phase()
 
     def display_welcome(self):
         print("Welcome to the battlefield! A battle for the ages is about to commence")
+        print('')
 
     def battle_phase(self):
         # after testing both attacks setup a while loop here that looks at both of their health values 
@@ -23,9 +24,11 @@ class Battlefield:
                 self.dinosaur.attack(self.robot)
                 if self.robot.health <= 0:
                       fighter_alive = False
+                      print('')
                       print(f'{self.dinosaur.name} defeated {self.robot.name}. {self.dinosaur.name} is the winner!')
                 elif self.dinosaur.health <=0:
                           fighter_alive =False
+                          print('')
                           print(f'{self.robot.name} defeated {self.dinosaur.name}. {self.robot.name} is the winner!')
                 
 
@@ -33,8 +36,3 @@ class Battlefield:
 
 
             
-
-
-    def display_winner(self):
-        pass
-        
